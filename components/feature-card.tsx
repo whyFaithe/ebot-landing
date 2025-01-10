@@ -21,17 +21,3 @@ export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps
   )
 }
 
-//Example usage, replace "AI-Powered Engagement" FeatureCard
-<FeatureCard
-  icon={Zap}
-  title="Tailored AI Solutions"
-  description="Custom-designed bots that align perfectly with your business processes and customer needs."
-/>
-
-//Add a new FeatureCard
-<FeatureCard
-  icon={RefreshCcw}
-  title="Continuous Optimization"
-  description="Our team monitors and iterates on your bots, ensuring peak performance and adaptability to your evolving business needs."
-/>
-
