@@ -7,15 +7,17 @@ import { BenefitsGrid } from '@/components/benefits-grid'
 import { StatsSection } from '@/components/stats-section'
 import { TestimonialSection } from '@/components/testimonial-section'
 import { ContactPricing } from '@/components/contact-pricing'
-import { GradientGrid } from '@/components/ui/gradient-grid'
 import { PlatformLogos } from '@/components/platform-logos'
 import { UseCaseSection } from '@/components/use-case-section'
 import { HowItWorks } from '@/components/how-it-works'
+import { TexturedBackground } from '@/components/ui/textured-background'
+import { SectionDivider } from '@/components/ui/section-divider'
+import { HeroSection } from '@/components/hero-section'
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
-      <GradientGrid />
+      <TexturedBackground />
       
       {/* Announcement Banner */}
       <div className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-800">
@@ -46,65 +48,7 @@ export default function Home() {
 
       <main className="relative">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center rounded-full border border-gray-800 bg-gray-900/50 backdrop-blur-xl p-1 pr-4 mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-green-500/10 p-1 text-green-400 text-xs font-medium leading-5 mr-2">
-                  New
-                </span>
-                <span className="text-gray-300 text-sm">Fully Managed AI Bots</span>
-              </div>
-              <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                Fully Managed AI-Powered Bots for{' '}
-                <span className="text-green-400">Small Businesses</span>
-              </h1>
-              <p className="text-xl text-gray-300/90 mb-8 leading-relaxed">
-                E-Bots provides fully managed, AI-powered bots tailored to your business needs. Our team designs, implements, and monitors your bots, ensuring seamless integration with your existing platforms and continuous optimization for maximum efficiency.
-              </p>
-              <div className="flex gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-                >
-                  Get Started
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-gray-800 text-gray-300 hover:bg-gray-800"
-                >
-                  View Use Cases
-                </Button>
-              </div>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="flex -space-x-2">
-                  {[1,2,3,4].map((i) => (
-                    <img
-                      key={i}
-                      className="inline-block h-8 w-8 rounded-full ring-2 ring-gray-900"
-                      src={`/placeholder.svg?height=32&width=32`}
-                      alt=""
-                    />
-                  ))}
-                </div>
-                <div className="text-sm text-gray-400">
-                  Trusted by 1000+ customers
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-purple-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
-              <div className="relative bg-gray-900/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 p-8">
-                <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e-bot_head%202.PNG-L0fuDlm3JtQHS08e0hRUgtz0rLpMGu.png"
-                  alt="Ebot Illustration"
-                  className="w-full max-w-md mx-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <HeroSection />
 
         {/* Platform Logos Section */}
         <section className="container mx-auto px-4 py-20">
@@ -112,6 +56,8 @@ export default function Home() {
             <PlatformLogos />
           </div>
         </section>
+        
+        <SectionDivider />
 
         {/* Features Section */}
         <section id="features" className="container mx-auto px-4 py-20">
@@ -147,6 +93,8 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* How It Works Section */}
         <section id="how-it-works" className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
@@ -159,6 +107,8 @@ export default function Home() {
             <HowItWorks />
           </div>
         </section>
+
+        <SectionDivider />
 
         {/* Use Cases Section */}
         <section id="use-cases" className="container mx-auto px-4 py-20">
@@ -173,8 +123,10 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Benefits Section */}
-        <section className="container mx-auto px-4 py-20 border-t border-gray-800">
+        <section className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">
               Why Choose E-Bots?
@@ -183,8 +135,10 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Automation Section */}
-        <section className="container mx-auto px-4 py-20 border-t border-gray-800">
+        <section className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative">
@@ -216,8 +170,10 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Testimonials Section */}
-        <section id="testimonials" className="container mx-auto px-4 py-20 border-t border-gray-800">
+        <section id="testimonials" className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">
               What Our Customers Say
@@ -226,6 +182,8 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* Contact Section */}
         <section id="contact" className="container mx-auto px-4 py-20">
           <div className="max-w-2xl mx-auto">
@@ -233,8 +191,10 @@ export default function Home() {
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* FAQ Section */}
-        <section id="faq" className="container mx-auto px-4 py-20 border-t border-gray-800">
+        <section id="faq" className="container mx-auto px-4 py-20">
           <FaqSection />
         </section>
       </main>
