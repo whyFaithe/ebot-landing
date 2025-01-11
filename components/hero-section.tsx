@@ -111,8 +111,8 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-purple-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
             <div className="relative bg-gray-900/50 backdrop-blur-xl rounded-3xl border border-gray-800/50 p-8">
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e-bot_head%202.PNG-L0fuDlm3JtQHS08e0hRUgtz0rLpMGu.png"
-                alt="Ebot Illustration"
+                src="/ebot_transp.gif"
+                alt="Ebot Gif"
                 className="w-full max-w-md mx-auto"
               />
             </div>
