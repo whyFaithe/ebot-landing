@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* Platform Logos */}
         <section className="container mx-auto px-4 py-20 bg-gradient-to-b from-[#1fc45c] via-[#1fc45c] via-60% to-[#101827b] opacity-80">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto bg-gradient-to-b from-[#1fc45c] via-[#1fc45c] via-60% to-[#101827b] opacity-80">
             <PlatformLogos />
           </div>
         </section>
