@@ -26,6 +26,13 @@ export function HeroSection() {
     }
   }, [])
 
+  const profileArray = [
+    '/profile_pic1.png',
+    '/profile_pic2.png',
+    '/profile_pic3.png',
+    '/profile_pic4.png'
+  ]
+
   return (
     <section
       className="relative overflow-hidden"
@@ -86,7 +93,7 @@ export function HeroSection() {
             </div>
             <div className="mt-8 flex items-center gap-4">
               <div className="flex -space-x-2">
-                {[1,2,3,4].map((i) => (
+                {profileArray.map((i) => (
                   <img
                     key={i}
                     className="inline-block h-8 w-8 rounded-full ring-2 ring-gray-900"
