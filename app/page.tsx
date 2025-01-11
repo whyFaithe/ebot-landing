@@ -49,7 +49,7 @@ export default function Home() {
         <HeroSection />
 
         {/* Platform Logos */}
-        <section className="container mx-auto px-4 py-20 bg-gradient-to-b from-[#101827b] via-[#101827b]  via-60% to-[#1fc45c] opacity-80">
+        <section className="container mx-auto px-4 py-20 bg-gradient-to-b from-[#1fc45c] via-[#101827b]  via-60% to-[#1fc45c] opacity-80">
           <div className="max-w-6xl mx-auto">
             <PlatformLogos />
           </div>
