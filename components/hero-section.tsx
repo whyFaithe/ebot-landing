@@ -86,7 +86,7 @@ export function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-gray-800 text-gray-100 hover:bg-gray-800"
+                className="border-gray-800 text-gray-600 hover:bg-gray-800 hover:text-gray-100 "
               >
                 View Use Cases
               </Button>
