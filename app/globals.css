@@ -25,7 +25,7 @@
     --ring: 142.1 76.2% 36.3%;
     --radius: 0.75rem;
   }
- 
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
@@ -51,7 +51,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border)); /* Use valid CSS */
   }
   body {
     @apply bg-background text-foreground;
