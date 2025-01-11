@@ -53,6 +53,9 @@ export default function Home() {
           <div className="max-w-6xl mx-auto ">
             <PlatformLogos />
           </div>
+          {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-85% to-[#1fc45c] opacity-60 pointer-events-none" />
+
         </section>
 
         <SectionDivider />
