@@ -18,7 +18,7 @@ export function PlatformLogos() {
           Works with your favorite platforms
         </h3>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-*">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
         {platforms.map((platform) => (
           <div
             key={platform.name}
@@ -27,7 +27,7 @@ export function PlatformLogos() {
             <Image
               src={platform.icon}
               alt={platform.name}
-              width={auto}
+              
               height={40}
               className="grayscale opacity-70 hover:opacity-100 transition-opacity"
             />
