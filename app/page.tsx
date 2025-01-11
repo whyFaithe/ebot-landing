@@ -54,7 +54,7 @@ export default function Home() {
             <PlatformLogos />
           </div>
           {/* Overlay Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b opacity-60 from-[#1fc45c] via-[#1fc45c] via-65% to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1fc45c] via-[#1fc45c] via-65% to-transparent pointer-events-none" />
 
         </section>
 
