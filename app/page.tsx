@@ -49,8 +49,8 @@ export default function Home() {
         <HeroSection />
 
         {/* Platform Logos */}
-        <section className="relative container mx-auto ">
-          <div className="max-w-6xl mx-auto px-4 py-20">
+        <section className="relative mx-auto ">
+          <div className="container max-w-6xl mx-auto px-4 py-20">
             <PlatformLogos />
           </div>
           {/* Overlay Gradient */}
