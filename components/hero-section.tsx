@@ -57,7 +57,7 @@ export function HeroSection() {
         }}
       />
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-60% to-[rgba (30, 197, 92, .7)]  pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-60% to-[#1fc45c] opacity-80 pointer-events-none" />
 
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">

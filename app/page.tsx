@@ -60,7 +60,8 @@ export default function Home() {
         <SectionDivider />
 
         {/* Features Section */}
-        <section id="features" className="container mx-auto px-4 py-20">
+        <section id="features" className="container mx-auto px-4 py-20  from-[#101827b] via-[#101827b]  via-60% to-[#1fc45c] opacity-80" />
+">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">
               Key Features
