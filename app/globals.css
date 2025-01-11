@@ -51,7 +51,7 @@
 
 @layer base {
   * {
-    border-color: hsl(var(--border)); /* Use valid CSS */
+    border-color: hsl(var(--border));
   }
   body {
     @apply bg-background text-foreground;
@@ -70,4 +70,3 @@
     opacity: 0.5;
   }
 }
-
