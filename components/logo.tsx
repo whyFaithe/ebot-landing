@@ -15,7 +15,7 @@ export function Logo() {
       </div>
       <div className="flex flex-col">
         <span className="text-2xl font-bold text-white leading-none">E-bots</span>
-        <span className="text-sm text-gray-400">by WhyFaithe</span>
+        <span className="text-sm text-gray-400">by whyFaithe</span>
       </div>
     </Link>
   )

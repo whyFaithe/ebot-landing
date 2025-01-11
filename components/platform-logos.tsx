@@ -15,7 +15,7 @@ export function PlatformLogos() {
     <Card className="bg-gray-900/50 border-gray-800 p-8 backdrop-blur-xl">
       <div className="text-center mb-6">
         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-          Works with your favorite platforms
+          Works with all of your favorite platforms
         </h3>
       </div>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-8">

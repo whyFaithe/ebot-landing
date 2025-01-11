@@ -103,7 +103,7 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="text-sm text-gray-400">
-                Trusted by 1000+ customers
+                Trusted by industry leaders
               </div>
             </div>
           </div>
