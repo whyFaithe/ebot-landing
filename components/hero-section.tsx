@@ -93,11 +93,11 @@ export function HeroSection() {
             </div>
             <div className="mt-8 flex items-center gap-4">
               <div className="flex -space-x-2">
-                {profileArray.map((i) => (
+                {profileArray.map((pic,i) => (
                   <img
                     key={i}
-                    className="inline-block h-8 w-8 rounded-full ring-2 ring-gray-900"
-                    src={`/placeholder.svg?height=32&width=32`}
+                    className="inline-block h-8 w-8 rounded-full ring-2 "
+                    src={pic}
                     alt=""
                   />
                 ))}
