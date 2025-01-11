@@ -29,7 +29,7 @@ export function PlatformLogos() {
               alt={platform.name}
               
               height={40}
-              className=" brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
+              className="bg-transparent brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
         ))}
