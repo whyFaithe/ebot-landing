@@ -61,7 +61,7 @@ export default function Home() {
 
         {/* Features Section */}
         <section id="features" className="container mx-auto px-4 py-20  " />
-">
+
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">
               Key Features
