@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { Card } from '@/components/ui/card'
 
 const platforms = [
-  { name: 'Shopify', icon: '/placeholder.svg?height=40&width=40' },
-  { name: 'WordPress', icon: '/placeholder.svg?height=40&width=40' },
-  { name: 'Facebook', icon: '/placeholder.svg?height=40&width=40' },
-  { name: 'Instagram', icon: '/placeholder.svg?height=40&width=40' },
-  { name: 'Google Sheets', icon: '/placeholder.svg?height=40&width=40' },
-  { name: 'Zapier', icon: '/placeholder.svg?height=40&width=40' },
+  { name: 'Shopify', icon: '/brands/shopify_logo.svg' },
+  { name: 'WordPress', icon: '/brands/wordpress_logo.svg' },
+  { name: 'BigCommerce', icon: '/brands/bigcommerce_logo.svg' },
+  { name: 'Webflow', icon: '/brands/webflow_logo.svg' },
+  { name: 'Wix', icon: '/brands/wix_logo.svg' },
+  { name: 'Magento', icon: '//brands/magento_logo.svg' },
 ]
 
 export function PlatformLogos() {
@@ -18,7 +18,7 @@ export function PlatformLogos() {
           Works with your favorite platforms
         </h3>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-*">
         {platforms.map((platform) => (
           <div
             key={platform.name}
@@ -27,9 +27,9 @@ export function PlatformLogos() {
             <Image
               src={platform.icon}
               alt={platform.name}
-              width={40}
+              width={auto}
               height={40}
-              className="opacity-70 hover:opacity-100 transition-opacity"
+              className="grayscale opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
         ))}
