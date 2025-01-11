@@ -6,7 +6,7 @@ export function Logo() {
     <Link href="/" className="flex items-center gap-3">
       <div className="w-10 h-10 rounded-lg bg-[#4ade80] flex items-center justify-center">
         <Image 
-          src="/e-bot_profile.png"
+          src="/e-bot_head.png"
           alt="Ebot Logo" 
           width={32} 
           height={32}
