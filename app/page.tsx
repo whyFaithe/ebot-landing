@@ -68,7 +68,7 @@ export default function Home() {
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Fully managed AI solutions designed to streamline your business operations
             </p>
-            <div className="grid md:grid-cols-3 place-content-center  gap-8">
+            <div className="grid md:grid-cols-2 place-content-center gap-8">
               <FeatureCard
                 icon={MessageSquare}
                 title="Platform Flexibility"
