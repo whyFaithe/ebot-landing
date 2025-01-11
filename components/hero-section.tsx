@@ -42,7 +42,7 @@ export function HeroSection() {
             rgba(67, 23, 97, 0.08) 15%,      
             rgba(16, 24, 39, 0.9) 65%, 
             rgba(16, 24, 39, 1) 100%), 
-            url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background_lines-rdzsHAQ3ME5s5g5npidfF9adIvPlYB.png)`,
+            url('/background_lines2.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
