@@ -7,7 +7,7 @@ const platforms = [
   { name: 'BigCommerce', icon: '/brands/bigcommerce_logo.svg' },
   { name: 'Webflow', icon: '/brands/webflow_logo.svg' },
   { name: 'Wix', icon: '/brands/wix_logo.svg' },
-  { name: 'Magento', icon: '//brands/magento_logo.svg' },
+  { name: 'Magento', icon: '/brands/magento_logo.svg' },
 ]
 
 export function PlatformLogos() {
