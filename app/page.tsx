@@ -49,12 +49,12 @@ export default function Home() {
         <HeroSection />
 
         {/* Platform Logos */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="relative container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto ">
             <PlatformLogos />
           </div>
           {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-85% to-[#1fc45c] opacity-60 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-85% to-[#1fc45c] opacity-60 pointer-events-none" />
 
         </section>
 
