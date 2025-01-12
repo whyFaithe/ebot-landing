@@ -191,6 +191,8 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section id="faq" className="relative mx-auto ">
+          
+          <FaqSection className="z-50" />
           {/* Background Image */}
           <div
             className="z-[-1] absolute opacity-30 inset-0"
@@ -203,7 +205,6 @@ export default function Home() {
             }}
           >
           </div>
-          <FaqSection className="z-50" />
         </section>
       </main>
 
