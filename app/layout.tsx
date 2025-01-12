@@ -1,8 +1,9 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Script from 'next/script'; // Import Next.js Script component
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Ebots by WhyFaithe',
@@ -15,35 +16,55 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-    <head>
-      <script src ="https://whyfaithe.jotform.com/static/feedback2.js" type="text/javascript"></script>
-      <script type="text/javascript">
-          var JFL_250055040868959 = new JotformFeedback({
-            formId: '250055040868959',
-            base: 'https://whyfaithe.jotform.com/',
-            windowTitle: 'Contact Us',
-            backgroundColor: '#1fc55c',
-            fontColor: '#FFFFFF',
-            type: 'false',
-            height: 500,
-            width: 700,
-            openOnLoad: false
-          });
-      </script>
-      <script src='https://whyfaithe.jotform.com/s/umd/latest/for-form-embed-handler.js'></script>
-      <script>window.jotformEmbedHandler("iframe[id='250055040868959']", "https://whyfaithe.jotform.com/")</script>
-    </head>
+      <head>
+        <Script
+          src="https://whyfaithe.jotform.com/static/feedback2.js"
+          strategy="beforeInteractive" // Load before page becomes interactive
+        />
+        <Script
+          id="jotform-feedback-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var JFL_250055040868959 = new JotformFeedback({
+                formId: '250055040868959',
+                base: 'https://whyfaithe.jotform.com/',
+                windowTitle: 'Contact Us',
+                backgroundColor: '#1fc55c',
+                fontColor: '#FFFFFF',
+                type: 'false',
+                height: 500,
+                width: 700,
+                openOnLoad: false
+              });
+            `,
+          }}
+        />
+        <Script
+          src="https://whyfaithe.jotform.com/s/umd/latest/for-form-embed-handler.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="jotform-embed-handler"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.jotformEmbedHandler("iframe[id='250055040868959']", "https://whyfaithe.jotform.com/");
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
 
