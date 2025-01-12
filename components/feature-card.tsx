@@ -10,7 +10,7 @@ interface FeatureCardProps {
 export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
     <FloatingCard>
-      <div className="p-6 rounded-2xl border border-gray-800/50 bg-gray-900/90 backdrop-blur-xl">
+      <div className="p-6 rounded-2xl border border-gray-800/50 bg-gray-900/90 backdrop-blur-xl flex flex-col items-center text-center">
         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-purple-500/20 p-2.5 mb-4">
           <Icon className="w-full h-full text-green-400" />
         </div>
@@ -20,4 +20,3 @@ export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps
     </FloatingCard>
   )
 }
-

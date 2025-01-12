@@ -26,7 +26,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-center text-center">
       {steps.map((step, index) => {
         const Icon = step.icon
         return (

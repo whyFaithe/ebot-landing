@@ -14,7 +14,7 @@ function Stat({ value, label }: StatProps) {
 
 export function StatsSection() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 flex flex-col items-center text-center">
       <Stat value="95%" label="Customer Satisfaction" />
       <Stat value="24/7" label="Availability" />
       <Stat value="50%" label="Cost Reduction" />
