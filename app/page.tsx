@@ -37,7 +37,7 @@ export default function Home() {
             <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-
+            <ContactUs/>
           </div>
         </nav>
       </header>
