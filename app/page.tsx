@@ -51,7 +51,8 @@ export default function Home() {
         {/* Platform Logos */}
         <section className="relative mx-auto ">
         {/* Overlay Gradient */}
-          <div className="absolute inset-0 bg-[#1fc45c]pointer-events-none" />
+
+          <div className="absolute inset-0 bg-[#1fc45c] pointer-events-none" />
 
           <div className="container max-w-6xl mx-auto px-4 py-20">
             <PlatformLogos />
