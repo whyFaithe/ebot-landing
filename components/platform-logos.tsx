@@ -11,7 +11,7 @@ const platforms = [
 
 export function PlatformLogos() {
   return (
-    <Card className="bg-gradient-to-br from-[#101827] via-gray-800/40 to-[#1fc45c]/70 border-gray-800 p-8 backdrop-blur-xl">
+    <Card className="bg-gradient-to-br from-[#101827] via-gray-800/10 to-[#1fc45c]/10 border-gray-800 p-8 backdrop-blur-xl">
       <div className="text-center mb-6">
         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
           Works with all of your favorite platforms
