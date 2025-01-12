@@ -36,9 +36,25 @@ export default function Home() {
             <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-            <Button className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20">
+            <a
+              className="bg-green-500 
+              text-white 
+              hover:bg-green-600 
+              shadow-lg 
+              shadow-green-500/20"
+              href="javascript:void(
+                window.open(
+                  'https://whyfaithe.jotform.com/250055040868959',
+                  'blank',
+                  'scrollbars=yes,
+                  toolbar=no,
+                  width=700,
+                  height=500'
+                )
+              )
+            ">
               Contact Us
-            </Button>
+            </a>
           </div>
         </nav>
       </header>
@@ -51,7 +67,8 @@ export default function Home() {
         {/* Platform Logos */}
         <section className="relative mx-auto ">
 
-          
+          {/* Overlay Gradient */}
+          <div className="absolute inset-0 bg-[[#101827] pointer-events-none" />
 
           <div className="container max-w-6xl mx-auto px-4 py-20 bg-[#101827]">
             <PlatformLogos />
@@ -214,7 +231,7 @@ export default function Home() {
           <div className="flex justify-center space-x-8">
             <a href="/privacy" className="hover:text-green-400 transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-green-400 transition-colors">Terms of Use</a>
-            <a href="/contact" className="hover:text-green-400 transition-colors">Contact</a>
+            <a href="/contact" className="hover:text-green-400 transition-colors">Contact Us</a>
           </div>
           <div className="mt-8">
             <p>&copy; 2024 E-Bots by WhyFaithe. All rights reserved.</p>
