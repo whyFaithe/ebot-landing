@@ -64,7 +64,7 @@ export default function Home() {
         <section id="features" className="relative  mx-auto ">
           {/* Background Image */}
           <div
-            className="z-0 absolute opacity-30 inset-0"
+            className="z-[-1] absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines2.svg')`,
               backgroundSize: 'contain',
@@ -125,7 +125,7 @@ export default function Home() {
         <section id="use-cases" className="relative mx-auto ">
           {/* Background Image */}
           <div
-            className="z-0 absolute opacity-30 inset-0"
+            className="z-[-1] absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines3.svg')`,
               backgroundSize: 'contain',
@@ -161,7 +161,7 @@ export default function Home() {
         <section id="testimonials" className=" relative  mx-auto ">
           {/* Background Image */}
           <div
-            className="z-0 absolute opacity-30 inset-0"
+            className="z-[-1] absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines4.svg')`,
               backgroundSize: 'contain',
@@ -193,7 +193,7 @@ export default function Home() {
         <section id="faq" className="relative mx-auto ">
           {/* Background Image */}
           <div
-            className="z-0 absolute opacity-30 inset-0"
+            className="z-[-1] absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines5.svg')`,
               backgroundSize: 'contain',
