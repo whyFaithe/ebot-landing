@@ -31,7 +31,7 @@ export function HowItWorks() {
       {steps.map((step, index) => {
         const Icon = step.icon
         return (
-          <Card key={step.title} className="bg-gray-900/90 border-gray-800 flex flex-col items-center text-center">
+          <Card key={step.title} className="bg-gray-900/90 backdrop-blur-xl border-gray-800 flex flex-col items-center text-center">
             <CardHeader className="flex flex-col items-center justify-center mb-4">
               <div className="w-12 h-12 rounded-full bg-green-500/10 flex flex-col items-center justify-center">
                 <Icon className="w-6 h-6 text-green-400" />
