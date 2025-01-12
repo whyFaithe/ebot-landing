@@ -40,7 +40,7 @@ export function UseCaseSection() {
       {useCases.map((useCase) => {
         const Icon = useCase.icon
         return (
-          <Card key={useCase.title} className="bg-gray-800/50 border-gray-800 p-6">
+          <Card key={useCase.title} className="bg-gray-800/50 border-gray-800 p-6 flex flex-col items-center text-center">
             <Icon className="w-8 h-8 text-green-400 mb-4" />
             <h3 className="text-lg font-semibold text-white mb-2">{useCase.title}</h3>
             <p className="text-gray-300">{useCase.description}</p>
