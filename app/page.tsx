@@ -100,7 +100,7 @@ export default function Home() {
           <div
             className="absolute opacity-90 inset-0"
             style={{
-              backgroundImage: `url('/background_lines1.svg')`, // Removed the semicolon
+              backgroundImage: `url('/background_lines3.svg')`, // Removed the semicolon
             }}
           >
           </div>
@@ -131,6 +131,14 @@ export default function Home() {
 
         {/* Benefits Section */}
         <section className="container mx-auto px-4 py-20">
+          {/* Background Image */}
+          <div
+            className="absolute opacity-90 inset-0"
+            style={{
+              backgroundImage: `url('/background_lines4.svg')`, // Removed the semicolon
+            }}
+          >
+          </div>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose E-Bots?</h2>
             <BenefitsGrid />
@@ -151,6 +159,14 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="container mx-auto px-4 py-20">
+          {/* Background Image */}
+          <div
+            className="absolute opacity-90 inset-0"
+            style={{
+              backgroundImage: `url('/background_lines5.svg')`, // Removed the semicolon
+            }}
+          >
+          </div>
           <div className="max-w-2xl mx-auto">
             <ContactPricing />
           </div>
