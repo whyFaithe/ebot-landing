@@ -9,7 +9,7 @@ interface TestimonialProps {
 
 function Testimonial({ quote, author, role }: TestimonialProps) {
   return (
-    <Card className="bg-gray-800/50 border-gray-800">
+    <Card className="bg-gray-900/90 border-gray-800">
       <CardContent className="pt-6">
         <Quote className="w-8 h-8 text-green-400 mb-4" />
         <p className="text-gray-300 mb-4">{quote}</p>
