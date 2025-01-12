@@ -5,6 +5,10 @@ import Link from 'next/link'
 import Script from 'next/script' // Import the Script component
 
 export default function ContactUs() {
+  const handleIframeLoad = () => {
+    window.parent.scrollTo(0, 0); // Handle scrolling after iframe loads
+  };
+  
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       <TexturedBackground />
@@ -28,9 +32,27 @@ export default function ContactUs() {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <Script 
-          src="https://whyfaithe.jotform.com/jsform/250055040868959"
-          strategy="lazyOnload" // Script loads lazily after the page has finished loading
+        <iframe
+          id="JotFormIFrame-250055040868959"
+          title="Contact Us"
+          onLoad={handleIframeLoad}
+          allowTransparency="true"
+          allow="geolocation; microphone; camera; fullscreen"
+          src="https://whyfaithe.jotform.com/250055040868959"
+          frameBorder="0"
+          style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
+          scrolling="no"
+        ></iframe>
+
+        {/* JotForm Embed Handler Script */}
+        <Script
+          src="https://whyfaithe.jotform.com/s/umd/latest/for-form-embed-handler.js"
+          onLoad={() =>
+            window.jotformEmbedHandler?.(
+              "iframe[id='JotFormIFrame-250055040868959']",
+              'https://whyfaithe.jotform.com/'
+            )
+          }
         />
       </main>
 
