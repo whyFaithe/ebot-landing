@@ -26,9 +26,9 @@ export function PlatformLogos() {
             <Image
               src={platform.icon}
               alt={platform.name}
-              
               height={40}
-              className="bg-transparent brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
+              width={40}
+              className="h-10 w-auto object-contain bg-transparent brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
         ))}
