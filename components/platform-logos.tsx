@@ -17,7 +17,7 @@ export function PlatformLogos() {
           Works with all of your favorite platforms
         </h3>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-6">
         {platforms.map((platform) => (
           <div
             key={platform.name}
