@@ -7,7 +7,7 @@ import {
 
 export function FaqSection() {
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto py-20">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">Frequently Asked Questions</h2>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">

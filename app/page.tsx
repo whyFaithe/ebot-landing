@@ -203,7 +203,7 @@ export default function Home() {
             }}
           >
           </div>
-          <FaqSection className="z-100 container px-4 py-20" />
+          <FaqSection />
         </section>
       </main>
 
