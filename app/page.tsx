@@ -98,9 +98,13 @@ export default function Home() {
         <section id="how-it-works" className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
-            className="absolute opacity-90 inset-0"
+            className="absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines3.svg')`, // Removed the semicolon
+              backgroundImage: `url('/background_lines3.svg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              transition: 'background-image 0.3s ease-out',
             }}
           >
           </div>
@@ -133,9 +137,13 @@ export default function Home() {
         <section className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
-            className="absolute opacity-90 inset-0"
+            className="absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines4.svg')`, // Removed the semicolon
+              backgroundImage: `url('/background_lines4.svg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              transition: 'background-image 0.3s ease-out',
             }}
           >
           </div>
@@ -161,9 +169,13 @@ export default function Home() {
         <section id="contact" className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
-            className="absolute opacity-90 inset-0"
+            className="absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines5.svg')`, // Removed the semicolon
+              backgroundImage: `url('/background_lines5.svg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              transition: 'background-image 0.3s ease-out',
             }}
           >
           </div>
