@@ -28,7 +28,7 @@ export function PlatformLogos() {
               alt={platform.name}
               height={40}
               width={40}
-              className="conttrast-10 h-8 w-auto object-contain bg-transparent brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
+              className="conttrast-50 h-8 w-auto object-contain bg-transparent brightness-200 invert opacity-70 hover:opacity-100 transition-opacity"
             />
           </div>
         ))}
