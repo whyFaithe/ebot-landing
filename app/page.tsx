@@ -203,7 +203,7 @@ export default function Home() {
             }}
           >
           </div>
-          <FaqSection />
+          <FaqSection className="z-50" />
         </section>
       </main>
 
