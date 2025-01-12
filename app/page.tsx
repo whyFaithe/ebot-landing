@@ -13,7 +13,6 @@ import { HowItWorks } from '@/components/how-it-works';
 import { TexturedBackground } from '@/components/ui/textured-background';
 import { SectionDivider } from '@/components/ui/section-divider';
 import { HeroSection } from '@/components/hero-section';
-import { ContactUs } from '@/components/contact-us-btn';
 
 export default function Home() {
   return (
@@ -37,7 +36,6 @@ export default function Home() {
             <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-            <ContactUs/>
           </div>
         </nav>
       </header>
