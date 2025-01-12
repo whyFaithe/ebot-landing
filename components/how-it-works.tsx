@@ -32,7 +32,7 @@ export function HowItWorks() {
         return (
           <Card key={step.title} className="bg-gray-800/50 border-gray-800 flex flex-col items-center text-center">
             <CardHeader className="flex flex-col items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-500/10 ">
+              <div className="w-12 h-12 rounded-full bg-green-500/10 flex flex-col items-center justify-center">
                 <Icon className="w-6 h-6 text-green-400" />
               </div>
               <CardTitle className="text-white">{step.title}</CardTitle>
