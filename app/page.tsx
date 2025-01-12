@@ -75,8 +75,8 @@ export default function Home() {
           >
           </div>
           <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
-            <h2 className="text-3xl font-bold text-center mb-4 text-white">Key Features</h2>
-            <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+            <h2 className="z-10 text-3xl font-bold text-center mb-4 text-white">Key Features</h2>
+            <p className="z-10 text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Fully managed AI solutions designed to streamline your business operations
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -136,8 +136,8 @@ export default function Home() {
           >
           </div>
           <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
-            <h2 className="text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
-            <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+            <h2 className="z-10 text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
+            <p className="z-10 text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Discover how E-Bots can transform different aspects of your business
             </p>
             <UseCaseSection />
@@ -172,7 +172,7 @@ export default function Home() {
           >
           </div>
           <div className="z-10 container px-4 py-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
+            <h2 className="z-10 text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
             <TestimonialSection />
           </div>
         </section>
