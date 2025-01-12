@@ -39,12 +39,10 @@ export default function Home() {
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
             <Button 
-              className="btn lightbox-250055040868959 bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-              asChild
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
             >
               Contact Us
             </Button>
-            
           </div>
         </nav>
       </header>
