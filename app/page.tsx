@@ -205,7 +205,7 @@ export default function Home() {
             }}
           >
           </div>
-          <FaqSection className="z-10" />
+          <FaqSection />
         </section>
       </main>
 
