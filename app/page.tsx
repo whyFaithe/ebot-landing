@@ -61,8 +61,20 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="container mx-auto px-4 py-20">
-          <div className="max-w-6xl mx-auto">
+        <section id="features" className=" mx-auto px-4 py-20">
+          {/* Background Image */}
+          <div
+            className="absolute opacity-40 inset-0"
+            style={{
+              backgroundImage: `url('/background_lines3.svg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              transition: 'background-image 0.3s ease-out',
+            }}
+          >
+          </div>
+          <div className="container max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">Key Features</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Fully managed AI solutions designed to streamline your business operations
@@ -96,18 +108,7 @@ export default function Home() {
 
         {/* How It Works Section */}
         <section id="how-it-works" className="relative container mx-auto px-4 py-20">
-          {/* Background Image */}
-          <div
-            className="absolute opacity-40 inset-0"
-            style={{
-              backgroundImage: `url('/background_lines3.svg')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              transition: 'background-image 0.3s ease-out',
-            }}
-          >
-          </div>
+          
 
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">How It Works</h2>
@@ -121,20 +122,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className="container mx-auto px-4 py-20">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
-            <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-              Discover how E-Bots can transform different aspects of your business
-            </p>
-            <UseCaseSection />
-          </div>
-        </section>
-
-        <SectionDivider />
-
-        {/* Benefits Section */}
-        <section className="relative container mx-auto px-4 py-20">
+        <section id="use-cases" className=" mx-auto px-4 py-20">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -147,6 +135,20 @@ export default function Home() {
             }}
           >
           </div>
+          <div className="container max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
+            <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+              Discover how E-Bots can transform different aspects of your business
+            </p>
+            <UseCaseSection />
+          </div>
+        </section>
+
+        <SectionDivider />
+
+        {/* Benefits Section */}
+        <section className="relative container mx-auto px-4 py-20">
+          
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose E-Bots?</h2>
             <BenefitsGrid />
@@ -156,17 +158,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="container mx-auto px-4 py-20">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
-            <TestimonialSection />
-          </div>
-        </section>
-
-        <SectionDivider />
-
-        {/* Contact Section */}
-        <section id="contact" className="relative container mx-auto px-4 py-20">
+        <section id="testimonials" className=" mx-auto px-4 py-20">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -179,6 +171,17 @@ export default function Home() {
             }}
           >
           </div>
+          <div className="container max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
+            <TestimonialSection />
+          </div>
+        </section>
+
+        <SectionDivider />
+
+        {/* Contact Section */}
+        <section id="contact" className="relative container mx-auto px-4 py-20">
+          
           <div className="max-w-2xl mx-auto">
             <ContactPricing />
           </div>
@@ -188,7 +191,19 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section id="faq" className="container mx-auto px-4 py-20">
-          <FaqSection />
+          {/* Background Image */}
+          <div
+            className="absolute opacity-40 inset-0"
+            style={{
+              backgroundImage: `url('/background_lines4.svg')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              transition: 'background-image 0.3s ease-out',
+            }}
+          >
+          </div>
+          <FaqSection className="container" />
         </section>
       </main>
 
