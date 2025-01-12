@@ -122,10 +122,10 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className=" relative  mx-auto ">
+        <section id="use-cases" className="relative mx-auto ">
           {/* Background Image */}
           <div
-            className="absolute opacity-40 inset-0"
+            className="absolute opacity-20 inset-0"
             style={{
               backgroundImage: `url('/background_lines4.svg')`,
               backgroundSize: 'cover',
