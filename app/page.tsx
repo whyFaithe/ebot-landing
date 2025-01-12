@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className=" container mx-auto ">
+        <section id="features" className=" relative container mx-auto ">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -107,7 +107,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="relative container mx-auto px-4 py-20">
+        <section id="how-it-works" className=" container mx-auto px-4 py-20">
           
 
           <div className="max-w-6xl mx-auto">
@@ -122,7 +122,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className=" container mx-auto ">
+        <section id="use-cases" className=" relative container mx-auto ">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -147,7 +147,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Benefits Section */}
-        <section className="relative container mx-auto px-4 py-20">
+        <section className=" container mx-auto px-4 py-20">
           
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose E-Bots?</h2>
@@ -158,7 +158,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className=" container mx-auto ">
+        <section id="testimonials" className=" relative container mx-auto ">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -180,7 +180,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Contact Section */}
-        <section id="contact" className="relative container mx-auto px-4 py-20">
+        <section id="contact" className=" container mx-auto px-4 py-20">
           
           <div className="max-w-2xl mx-auto">
             <ContactPricing />
@@ -190,7 +190,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* FAQ Section */}
-        <section id="faq" className="container mx-auto ">
+        <section id="faq" className="relative container mx-auto ">
           {/* Background Image */}
           <div
             className="absolute opacity-40 inset-0"
@@ -200,6 +200,7 @@ export default function Home() {
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
+              width:"100%";
             }}
           >
           </div>
