@@ -49,7 +49,7 @@ export function HeroSection() {
             rgba(67, 23, 97, 0.08) 15%,      
             rgba(16, 24, 39, 0.9) 65%, 
             rgba(16, 24, 39, 1) 100%), 
-            url('/background_lines2.png')`,
+            url('/background_lines1.svg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

@@ -50,7 +50,7 @@ export default function Home() {
 
         {/* Platform Logos */}
         <section className="relative mx-auto ">
-        
+
           {/* Overlay Gradient */}
           <div className="absolute inset-0 bg-[#1fc45c] pointer-events-none" />
 
@@ -96,6 +96,15 @@ export default function Home() {
 
         {/* How It Works Section */}
         <section id="how-it-works" className="container mx-auto px-4 py-20">
+          {/* Background Image */}
+          <div
+            className="absolute opacity-90 inset-0"
+            style={{
+              backgroundImage: `url('/background_lines1.svg')`, // Removed the semicolon
+            }}
+          >
+          </div>
+
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">How It Works</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
