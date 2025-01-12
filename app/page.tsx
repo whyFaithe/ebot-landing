@@ -42,6 +42,8 @@ export default function Home() {
               className="btn lightbox-250055040868959 bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
               asChild
             >
+              Contact Us
+            </Button>
             <Script
               src="https://whyfaithe.jotform.com/static/feedback2.js"
               type="text/javascript"
