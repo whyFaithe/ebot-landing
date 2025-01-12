@@ -200,7 +200,6 @@ export default function Home() {
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
-              width:"100%";
             }}
           >
           </div>
