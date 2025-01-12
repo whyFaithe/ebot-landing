@@ -61,10 +61,10 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="z-0 relative mx-auto ">
+        <section id="features" className="relative mx-auto ">
           {/* Background Image */}
           <div
-            className="z-10 absolute opacity-30 inset-0"
+            className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines2.svg')`,
               backgroundSize: 'contain',
@@ -74,7 +74,7 @@ export default function Home() {
             }}
           >
           </div>
-          <div className="z-50 container max-w-6xl mx-auto px-4 py-20">
+          <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">Key Features</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Fully managed AI solutions designed to streamline your business operations
@@ -122,10 +122,10 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className="z-0 relative mx-auto ">
+        <section id="use-cases" className="relative mx-auto ">
           {/* Background Image */}
           <div
-            className="z-10 absolute opacity-30 inset-0"
+            className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines3.svg')`,
               backgroundSize: 'contain',
@@ -135,7 +135,7 @@ export default function Home() {
             }}
           >
           </div>
-          <div className="z-50 container max-w-6xl mx-auto px-4 py-20">
+          <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
               Discover how E-Bots can transform different aspects of your business
@@ -158,10 +158,10 @@ export default function Home() {
         <SectionDivider />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className=" z-0 relative  mx-auto ">
+        <section id="testimonials" className="relative  mx-auto ">
           {/* Background Image */}
           <div
-            className="z-10 absolute opacity-30 inset-0"
+            className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines4.svg')`,
               backgroundSize: 'contain',
@@ -171,7 +171,7 @@ export default function Home() {
             }}
           >
           </div>
-          <div className="z-50 container px-4 py-20 max-w-6xl mx-auto">
+          <div className="z-10 container px-4 py-20 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
             <TestimonialSection />
           </div>
@@ -190,12 +190,12 @@ export default function Home() {
         <SectionDivider />
 
         {/* FAQ Section */}
-        <section id="faq" className="z-0 relative mx-auto ">
+        <section id="faq" className="relative mx-auto ">
           
           
           {/* Background Image */}
           <div
-            className="z-10 absolute opacity-30 inset-0"
+            className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines5.svg')`,
               backgroundSize: 'contain',
@@ -205,7 +205,7 @@ export default function Home() {
             }}
           >
           </div>
-          <FaqSection className="z-50" />
+          <FaqSection className="z-10" />
         </section>
       </main>
 
