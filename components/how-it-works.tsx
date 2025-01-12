@@ -26,11 +26,11 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-center text-center">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 ">
       {steps.map((step, index) => {
         const Icon = step.icon
         return (
-          <Card key={step.title} className="bg-gray-800/50 border-gray-800">
+          <Card key={step.title} className="bg-gray-800/50 border-gray-800 flex flex-col items-center text-center">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
                 <Icon className="w-6 h-6 text-green-400" />
