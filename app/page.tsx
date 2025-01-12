@@ -68,7 +68,7 @@ export default function Home() {
             style={{
               backgroundImage: `url('/background_lines2.svg')`,
               backgroundSize: 'contain',
-              backgroundPosition: 'center',
+              backgroundPosition: 'right center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
@@ -129,7 +129,7 @@ export default function Home() {
             style={{
               backgroundImage: `url('/background_lines3.svg')`,
               backgroundSize: 'contain',
-              backgroundPosition: 'center',
+              backgroundPosition: 'left center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
@@ -165,7 +165,7 @@ export default function Home() {
             style={{
               backgroundImage: `url('/background_lines4.svg')`,
               backgroundSize: 'contain',
-              backgroundPosition: 'center',
+              backgroundPosition: 'right center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
@@ -197,7 +197,7 @@ export default function Home() {
             style={{
               backgroundImage: `url('/background_lines5.svg')`,
               backgroundSize: 'contain',
-              backgroundPosition: 'center',
+              backgroundPosition: 'left center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
