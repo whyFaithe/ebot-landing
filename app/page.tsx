@@ -95,7 +95,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="container mx-auto px-4 py-20">
+        <section id="how-it-works" className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
             className="absolute opacity-90 inset-0"
@@ -130,7 +130,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Benefits Section */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
             className="absolute opacity-90 inset-0"
@@ -158,7 +158,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Contact Section */}
-        <section id="contact" className="container mx-auto px-4 py-20">
+        <section id="contact" className="relative container mx-auto px-4 py-20">
           {/* Background Image */}
           <div
             className="absolute opacity-90 inset-0"
