@@ -1,4 +1,4 @@
-import { Building2, ShoppingCart, MessageCircle, Home, Store, Hotel } from 'lucide-react'
+import { Building2, ShoppingCart, MessageCircle, Home, Store, Hotel, UserPlus } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 
 const useCases = [
@@ -8,9 +8,9 @@ const useCases = [
     description: 'Boost conversions with product recommendations and instant customer support.'
   },
   {
-    icon: MessageCircle,
-    title: 'Social Media',
-    description: 'Engage followers on platforms like Facebook or Instagram with automated messaging.'
+    icon: UserPlus,
+    title: 'Lead Generation',
+    description: 'Capture leads, qualify prospects, and automate follow-ups effortlessly.'
   },
   {
     icon: Building2,
