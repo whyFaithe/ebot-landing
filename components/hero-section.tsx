@@ -108,7 +108,7 @@ export function HeroSection() {
             </div>
           </div>
           <div className="relative ">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-purple-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
+            <div className="hidden absolute inset-0 bg-gradient-to-r from-green-500/20 via-purple-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
             <div className="rounded-3xl p-8">
               <img 
                 src="/ebot_transp.gif"
