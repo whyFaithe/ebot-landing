@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="relative  mx-auto ">
+        <section id="features" className="z-0 relative mx-auto ">
           {/* Background Image */}
           <div
             className="z-[1] absolute opacity-30 inset-0"
@@ -122,7 +122,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className="relative mx-auto ">
+        <section id="use-cases" className="z-0 relative mx-auto ">
           {/* Background Image */}
           <div
             className="z-[1] absolute opacity-30 inset-0"
@@ -158,7 +158,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className=" relative  mx-auto ">
+        <section id="testimonials" className=" z-0 relative  mx-auto ">
           {/* Background Image */}
           <div
             className="z-[1] absolute opacity-30 inset-0"
@@ -190,7 +190,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* FAQ Section */}
-        <section id="faq" className="relative mx-auto ">
+        <section id="faq" className="z-0 relative mx-auto ">
           
           <FaqSection className="z-50" />
           {/* Background Image */}
