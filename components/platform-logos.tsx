@@ -4,10 +4,9 @@ import { Card } from '@/components/ui/card'
 const platforms = [
   { name: 'Shopify', icon: '/brands/shopify_logo.svg' },
   { name: 'WordPress', icon: '/brands/wordpress_logo.svg' },
+  { name: 'Wix', icon: '/brands/wix_logo.svg' },
   { name: 'BigCommerce', icon: '/brands/bigcommerce_logo.svg' },
   { name: 'Webflow', icon: '/brands/webflow_logo.svg' },
-  { name: 'Wix', icon: '/brands/wix_logo.svg' },
-  { name: 'Magento', icon: '/brands/magento_logo.svg' },
 ]
 
 export function PlatformLogos() {
@@ -18,7 +17,7 @@ export function PlatformLogos() {
           Works with all of your favorite platforms
         </h3>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-8">
         {platforms.map((platform) => (
           <div
             key={platform.name}
