@@ -67,7 +67,7 @@ export default function Home() {
             className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines2.svg')`,
-              backgroundSize: 'cover',
+              backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
@@ -128,7 +128,7 @@ export default function Home() {
             className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines3.svg')`,
-              backgroundSize: 'cover',
+              backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
@@ -164,7 +164,7 @@ export default function Home() {
             className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines4.svg')`,
-              backgroundSize: 'cover',
+              backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
@@ -196,7 +196,7 @@ export default function Home() {
             className="z-0 absolute opacity-30 inset-0"
             style={{
               backgroundImage: `url('/background_lines5.svg')`,
-              backgroundSize: 'cover',
+              backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
