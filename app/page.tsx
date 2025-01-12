@@ -66,7 +66,7 @@ export default function Home() {
           <div
             className="z-0 absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines3.svg')`,
+              backgroundImage: `url('/background_lines2.svg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -127,7 +127,7 @@ export default function Home() {
           <div
             className="z-0 absolute opacity-20 inset-0"
             style={{
-              backgroundImage: `url('/background_lines4.svg')`,
+              backgroundImage: `url('/background_lines3.svg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -163,7 +163,7 @@ export default function Home() {
           <div
             className="z-0 absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines5.svg')`,
+              backgroundImage: `url('/background_lines4.svg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -190,14 +190,12 @@ export default function Home() {
         <SectionDivider />
 
         {/* FAQ Section */}
-        <section id="faq" className="relative mx-auto "
-
-        >
+        <section id="faq" className="relative mx-auto ">
           {/* Background Image */}
           <div
             className="z-0 absolute opacity-40 inset-0"
             style={{
-              backgroundImage: `url('/background_lines4.svg')`,
+              backgroundImage: `url('/background_lines5.svg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
