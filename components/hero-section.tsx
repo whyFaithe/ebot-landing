@@ -38,7 +38,7 @@ export function HeroSection() {
       className="relative overflow-hidden"
       id="hero-container"
     >
-      {/* Main Background Gradient */}
+      {/* Main Background */}
       <div className="absolute inset-0 bg-[#101827]" />
       {/* Mouse Reveal Effect */}
       <div
