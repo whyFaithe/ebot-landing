@@ -1,54 +1,16 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Bot, MessageSquare, Zap, RefreshCcw } from 'lucide-react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/logo';
-import { FeatureCard } from '@/components/feature-card';
-import { FaqSection } from '@/components/faq-section';
-import { BenefitsGrid } from '@/components/benefits-grid';
-import { StatsSection } from '@/components/stats-section';
-import { TestimonialSection } from '@/components/testimonial-section';
-import { ContactPricing } from '@/components/contact-pricing';
-import { PlatformLogos } from '@/components/platform-logos';
-import { UseCaseSection } from '@/components/use-case-section';
-import { HowItWorks } from '@/components/how-it-works';
-import { TexturedBackground } from '@/components/ui/textured-background';
-import { SectionDivider } from '@/components/ui/section-divider';
 import { HeroSection } from '@/components/hero-section';
-
-function JotFormEmbed() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Handle the iframe onLoad functionality
-    if (isLoaded) {
-      window.scrollTo(0, 0); // Scroll to top when iframe loads
-    }
-  }, [isLoaded]);
-
-  return (
-    <div className="container mx-auto px-4 py-12">
-      <iframe
-        id="JotFormIFrame-250055040868959"
-        title="Contact Us"
-        allowTransparency
-        allow="geolocation; microphone; camera; fullscreen"
-        src="https://whyfaithe.jotform.com/250055040868959"
-        frameBorder="0"
-        style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
-        scrolling="no"
-        onLoad={() => setIsLoaded(true)} // Set the state when iframe loads
-      ></iframe>
-    </div>
-  );
-}
+import JotFormEmbed from '@/components/JotFormEmbed'; // Import the new component
 
 export default function Home() {
   const [isScriptLoaded, setScriptLoaded] = useState(false);
 
   const handleContactClick = () => {
-    // Dynamically load the JotForm script when Contact button is clicked
+    // Dynamically load the JotForm script when the button is clicked
     if (!isScriptLoaded) {
       const script = document.createElement('script');
       script.src = 'https://whyfaithe.jotform.com/static/feedback2.js';
