@@ -40,40 +40,10 @@ export default function Home() {
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
             <Button 
               className="btn lightbox-250055040868959 bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-              asChild
             >
               Contact Us
             </Button>
-            <Script
-              src="https://whyfaithe.jotform.com/static/feedback2.js"
-              type="text/javascript"
-              onLoad={() => {
-                // Initialize JotForm Feedback after the script is loaded
-                new window.JotformFeedback({
-                  formId: '250055040868959',
-                  base: 'https://whyfaithe.jotform.com/',
-                  windowTitle: 'Contact Us',
-                  backgroundColor: '#1fc55c',
-                  fontColor: '#FFFFFF',
-                  type: 'false',
-                  height: 500,
-                  width: 700,
-                  openOnLoad: false,
-                });
-              }}
-            />
-
-            {/* Load the JotForm embed handler script */}
-            <Script
-              src="https://whyfaithe.jotform.com/s/umd/latest/for-form-embed-handler.js"
-              onLoad={() => {
-                // Ensure embed handler is properly initialized
-                window.jotformEmbedHandler?.(
-                  "iframe[id='250055040868959']",
-                  'https://whyfaithe.jotform.com/'
-                );
-              }}
-            />
+            
           </div>
         </nav>
       </header>
