@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
               className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
               asChild
             >
-              <Link href="/#contact">Contact Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
         </nav>

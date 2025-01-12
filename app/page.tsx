@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Bot, MessageSquare, Zap, RefreshCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/logo';
@@ -15,6 +16,40 @@ import { SectionDivider } from '@/components/ui/section-divider';
 import { HeroSection } from '@/components/hero-section';
 
 export default function Home() {
+  const [isScriptLoaded, setScriptLoaded] = useState(false);
+
+  const handleContactClick = () => {
+    // Load the JotForm script dynamically when the button is clicked
+    if (!isScriptLoaded) {
+      const script = document.createElement('script');
+      script.src = 'https://whyfaithe.jotform.com/static/feedback2.js';
+      script.type = 'text/javascript';
+      script.onload = () => {
+        setScriptLoaded(true);
+        initJotForm();
+      };
+      document.body.appendChild(script);
+    } else {
+      initJotForm();
+    }
+  };
+
+  const initJotForm = () => {
+    if (typeof window !== 'undefined' && window.JotformFeedback) {
+      new window.JotformFeedback({
+        formId: '250055040868959',
+        base: 'https://whyfaithe.jotform.com/',
+        windowTitle: 'Contact Us',
+        backgroundColor: '#FFA500',
+        fontColor: '#FFFFFF',
+        type: 'false',
+        height: 500,
+        width: 700,
+        openOnLoad: false,
+      });
+    }
+  };
+
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       <TexturedBackground />
@@ -33,28 +68,21 @@ export default function Home() {
         <nav className="flex justify-between items-center">
           <Logo />
           <div className="space-x-8">
-            <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
-            <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
-            <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-            <a
-              className="bg-green-500 
-              text-white 
-              hover:bg-green-600 
-              shadow-lg 
-              shadow-green-500/20"
-              href="javascript:void(
-                window.open(
-                  'https://whyfaithe.jotform.com/250055040868959',
-                  'blank',
-                  'scrollbars=yes,
-                  toolbar=no,
-                  width=700,
-                  height=500'
-                )
-              )
-            ">
-              Contact Us
+            <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">
+              Features
             </a>
+            <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">
+              How It Works
+            </a>
+            <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">
+              Use Cases
+            </a>
+            <Button
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
+              onClick={handleContactClick}
+            >
+              Contact Us
+            </Button>
           </div>
         </nav>
       </header>
