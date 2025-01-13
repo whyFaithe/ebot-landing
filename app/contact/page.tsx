@@ -1,6 +1,8 @@
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import { TexturedBackground } from '@/components/ui/textured-background';
+import { ContactUsBtn } from '@/components/contact-us-btn'
+import { JotFormEmbed } from '@/components/jotform-embed'
 import Link from 'next/link';
 import Script from 'next/script';
 
@@ -30,12 +32,9 @@ export default function ContactUs() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
-  
 
         {/* JotForm Embed Handler Script */}
-        <Script
-        type="text/javascript" src="https://whyfaithe.jotform.com/jsform/250055040868959"
-        />
+        <JotFormEmbed/>
       </main>
 
       {/* Footer */}
