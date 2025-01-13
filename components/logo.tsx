@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-3">
-      <div className="w-fit h-10 rounded-lg bg-[#4ade80] flex items-center justify-center">
+    <Link href="/" className="w-fit flex items-center gap-3">
+      <div className="w-10 h-10 rounded-lg bg-[#4ade80] flex items-center justify-center">
         <Image 
           src="/e-bot_head.png"
           alt="Ebot Logo" 
