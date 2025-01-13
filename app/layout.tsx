@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ContactModal } from '@/components/contact-modal';
 import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -33,7 +32,6 @@ export default function RootLayout({
         {children}
 
         {/* Add the ContactModal at the end of the body */}
-        <ContactModal/>
       </body>
     </html>
   );

@@ -1,10 +1,8 @@
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import { TexturedBackground } from '@/components/ui/textured-background';
-import { ContactUsBtn } from '@/components/contact-us-btn'
 import Link from 'next/link';
 import Script from 'next/script';
-import { JotFormEmbed } from '@/components/jotform-embed'
 
 export default function ContactUs() {
 
