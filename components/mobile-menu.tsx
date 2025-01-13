@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Logo } from './logo'
-import { ContactUsBtn } from '@/components/contact-us-btn'
+import { JotformModal } from '@/components/jotform-modal'
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -61,7 +61,7 @@ export function MobileMenu() {
               >
                 Use Cases
               </Link>
-              <ContactUsBtn/>
+              <JotformModal/>
             </nav>
           </div>
         </div>
