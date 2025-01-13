@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Logo } from './logo'
+import { ContactUsBtn } from '@/components/contact-us-btn'
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,12 +61,7 @@ export function MobileMenu() {
               >
                 Use Cases
               </Link>
-              <Button 
-                className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 w-full lightbox-250055040868959"
-                onClick={toggleMenu}
-              >
-                Contact Us
-              </Button>
+              <ContactUsBtn/>
             </nav>
           </div>
         </div>
