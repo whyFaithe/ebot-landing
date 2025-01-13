@@ -14,6 +14,7 @@ import { TexturedBackground } from '@/components/ui/textured-background'
 import { SectionDivider } from '@/components/ui/section-divider'
 import { HeroSection } from '@/components/hero-section'
 import { MobileMenu } from '@/components/mobile-menu'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -38,7 +39,11 @@ export default function Home() {
             <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-            <JotformModal/>
+            <Button
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
+            >
+              <Link href="https://whyfaithe.jotform.com/250055040868959">Contact Us</Link>
+            </Button>
           </div>
           <MobileMenu />
         </nav>

@@ -22,7 +22,7 @@ export default function ContactUs() {
               className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
               asChild
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="https://whyfaithe.jotform.com/250055040868959">Contact Us</Link>
             </Button>
           </div>
         </nav>
