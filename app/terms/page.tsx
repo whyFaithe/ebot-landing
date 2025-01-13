@@ -2,6 +2,7 @@ import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import { TexturedBackground } from '@/components/ui/textured-background'
 import Link from 'next/link'
+import { MobileMenu } from '@/components/mobile-menu'
 
 export default function TermsOfUse() {
   return (
@@ -12,17 +13,17 @@ export default function TermsOfUse() {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <Logo />
-          <div className="space-x-8">
+          <div className="hidden lg:flex space-x-8 items-center">
             <Link href="/" className="text-gray-300 hover:text-green-400 transition-colors">
               Back to Home
             </Link>
             <Button 
-              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-              asChild
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 lightbox-250055040868959"
             >
-              <Link href="/#contact">Contact Us</Link>
+              Contact Us
             </Button>
           </div>
+          <MobileMenu />
         </nav>
       </header>
 

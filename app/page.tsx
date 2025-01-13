@@ -1,52 +1,53 @@
-import { Bot, MessageSquare, Zap, RefreshCcw } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Logo } from '@/components/logo';
-import { FeatureCard } from '@/components/feature-card';
-import { FaqSection } from '@/components/faq-section';
-import { BenefitsGrid } from '@/components/benefits-grid';
-import { StatsSection } from '@/components/stats-section';
-import { TestimonialSection } from '@/components/testimonial-section';
-import { ContactPricing } from '@/components/contact-pricing';
-import { PlatformLogos } from '@/components/platform-logos';
-import { UseCaseSection } from '@/components/use-case-section';
-import { HowItWorks } from '@/components/how-it-works';
-import { TexturedBackground } from '@/components/ui/textured-background';
-import { SectionDivider } from '@/components/ui/section-divider';
-import { HeroSection } from '@/components/hero-section';
-import Script from 'next/script';
+import { Bot, MessageSquare, Zap, RefreshCcw } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/logo'
+import { FeatureCard } from '@/components/feature-card'
+import { FaqSection } from '@/components/faq-section'
+import { BenefitsGrid } from '@/components/benefits-grid'
+import { StatsSection } from '@/components/stats-section'
+import { TestimonialSection } from '@/components/testimonial-section'
+import { ContactPricing } from '@/components/contact-pricing'
+import { PlatformLogos } from '@/components/platform-logos'
+import { UseCaseSection } from '@/components/use-case-section'
+import { HowItWorks } from '@/components/how-it-works'
+import { TexturedBackground } from '@/components/ui/textured-background'
+import { SectionDivider } from '@/components/ui/section-divider'
+import { HeroSection } from '@/components/hero-section'
+import { MobileMenu } from '@/components/mobile-menu'
 
 export default function Home() {
-
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       <TexturedBackground />
-
+      
       {/* Announcement Banner */}
       <div className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-800">
         <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
           <div className="text-center text-sm font-medium text-gray-300">
-            Transform your business with fully managed AI-powered bots - Get started today
+            <span className="md:inline">
+              Transform your business with fully managed AI-powered bots - Get started today
+            </span>
           </div>
         </div>
       </div>
 
-      {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <Logo />
-          <div className="space-x-8">
+          <div className="hidden lg:flex space-x-8 items-center">
             <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
             <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
             <Button 
-              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 lightbox-250055040868959"
             >
               Contact Us
             </Button>
           </div>
+          <MobileMenu />
         </nav>
       </header>
-
+      
       {/* Main Content */}
       <main className="relative">
         {/* Hero Section */}
