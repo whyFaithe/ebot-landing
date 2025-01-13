@@ -2,11 +2,10 @@
 
 export function ContactUsBtn() {
   const handleOpenModal = () => {
-    // Access the globally initialized JotformFeedback instance
-    if (window.jotformFeedbackInstance) {
+    if (window.jotformFeedbackInstance && typeof window.jotformFeedbackInstance.open === 'function') {
       window.jotformFeedbackInstance.open();
     } else {
-      console.error('JotformFeedback instance is not initialized.');
+      console.error('JotformFeedback instance is not initialized or does not have an open method');
     }
   };
 
@@ -19,3 +18,4 @@ export function ContactUsBtn() {
     </button>
   );
 }
+
