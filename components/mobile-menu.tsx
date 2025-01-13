@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Logo } from './logo'
-import { JotformModal } from '@/components/jotform-modal'
+
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -61,7 +61,14 @@ export function MobileMenu() {
               >
                 Use Cases
               </Link>
-              <JotformModal/>
+              <Link 
+                href="https://whyfaithe.jotform.com/250055040868959" 
+                className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 px-4 py-2 rounded"
+                onClick={toggleMenu}
+              >
+                Use Cases
+              </Link>
+
             </nav>
           </div>
         </div>

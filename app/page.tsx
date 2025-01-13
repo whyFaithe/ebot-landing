@@ -217,7 +217,7 @@ export default function Home() {
           <div className="flex justify-center space-x-8">
             <a href="/privacy" className="hover:text-green-400 transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-green-400 transition-colors">Terms of Use</a>
-            <a href="/contact" className="hover:text-green-400 transition-colors">Contact Us</a>
+            <a href="https://whyfaithe.jotform.com/250055040868959" className="hover:text-green-400 transition-colors">Contact Us</a>
           </div>
           <div className="mt-8">
             <p>&copy; 2024 E-Bots by WhyFaithe. All rights reserved.</p>
