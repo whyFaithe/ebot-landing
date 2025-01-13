@@ -15,7 +15,7 @@ export function ContactModal() {
       type: 'false',
       height: 500,
       width: 700,
-      openOnLoad: true
+      openOnLoad: false
     });
 
     return () => {
