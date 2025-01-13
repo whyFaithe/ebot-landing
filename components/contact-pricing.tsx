@@ -11,11 +11,12 @@ export function ContactPricing() {
         <p className="text-gray-300 mb-6 max-w-md mx-auto">
           Contact us for custom pricing tailored to your business needs. Our team will create a perfect solution for you.
         </p>
+        
         <Button 
           size="lg" 
           className="bg-green-500 text-white hover:bg-green-600"
         >
-          Contact for Pricing
+        <Link href="https://whyfaithe.jotform.com/250055040868959">Contact for Pricing</Link>
         </Button>
       </CardContent>
     </Card>
