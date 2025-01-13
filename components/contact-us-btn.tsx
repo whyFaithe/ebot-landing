@@ -11,7 +11,7 @@ export function ContactUsBtn() {
 
   return (
     <button
-      className="btn lightbox-250055040868959 bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 px-4 py-2 rounded"
+      className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 px-4 py-2 rounded"
       onClick={handleOpenModal}
     >
       Contact Us
