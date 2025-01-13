@@ -44,7 +44,7 @@ export default function RootLayout({
                 type: 'false',
                 height: 500,
                 width: 700,
-                openOnLoad: false,
+                openOnLoad: true,
               });
             `,
           }}
