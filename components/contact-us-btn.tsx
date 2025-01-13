@@ -12,8 +12,8 @@ export function ContactUsBtn() {
     }
   };
 
-  const initializeJotform = () => {
-    // Initialize JotformFeedback and store the instance in a ref
+  useEffect(() => {
+    // @ts-ignore
     feedbackInstance.current = new window.JotformFeedback({
       formId: '250055040868959',
       base: 'https://whyfaithe.jotform.com/',
@@ -25,7 +25,12 @@ export function ContactUsBtn() {
       width: 700,
       openOnLoad: false, // Ensure it does not open on load
     });
-  };
+
+    return () => {
+      // Clean up if necessary
+    }
+  }, [])
+
 
   return (
     <>
