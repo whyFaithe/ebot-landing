@@ -14,7 +14,6 @@ import { TexturedBackground } from '@/components/ui/textured-background'
 import { SectionDivider } from '@/components/ui/section-divider'
 import { HeroSection } from '@/components/hero-section'
 import { MobileMenu } from '@/components/mobile-menu'
-import { JotformModal } from '@/components/jotform-modal'
 
 export default function Home() {
   return (
