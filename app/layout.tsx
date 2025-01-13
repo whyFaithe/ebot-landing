@@ -27,36 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <script
-          src="https://whyfaithe.jotform.com/static/feedback2.js"
-          type="text/javascript"
-        ></script>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var JFL_250055040868959 = new JotformFeedback({
-                formId: '250055040868959',
-                base: 'https://whyfaithe.jotform.com/',
-                windowTitle: 'Contact Us',
-                backgroundColor: '#1fc55c',
-                fontColor: '#FFFFFF',
-                type: 'false',
-                height: 500,
-                width: 700,
-                openOnLoad: true,
-              });
-            `,
-          }}
-        ></script>
-        <script
-          src="https://whyfaithe.jotform.com/s/umd/latest/for-form-embed-handler.js"
-        ></script>
+        
       </Head>
       <body className={inter.className}>
         {children}
 
         {/* Add the ContactModal at the end of the body */}
+        <ContactModal/>
       </body>
     </html>
   );
