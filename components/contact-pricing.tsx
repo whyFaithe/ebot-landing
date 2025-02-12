@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail } from 'lucide-react'
+import Link from 'next/link'
 
 export function ContactPricing() {
   return (
