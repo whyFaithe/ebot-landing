@@ -208,7 +208,6 @@ export default function SqueezePage() {
         </div>
       </footer>
 
-      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
   )
 }
