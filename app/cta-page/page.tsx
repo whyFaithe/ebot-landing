@@ -6,12 +6,10 @@ import { Button } from "@/components/ui/button"
 import { TexturedBackground } from "@/components/ui/textured-background"
 import Link from "next/link"
 import { MobileMenu } from "@/components/mobile-menu"
-import { ContactModal } from "@/components/contact-modal"
 import { Card } from "@/components/ui/card"
 import { Clock, Calendar, BarChart3, Rocket } from "lucide-react"
 
 export default function SqueezePage() {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
   return (
     <div className="relative min-h-screen bg-gray-900">
