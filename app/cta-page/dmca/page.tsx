@@ -6,33 +6,12 @@ import { Button } from "@/components/ui/button"
 import { TexturedBackground } from "@/components/ui/textured-background"
 import Link from "next/link"
 import { MobileMenu } from "@/components/mobile-menu"
-import { ContactModal } from "@/components/contact-modal"
 
 export default function DMCAPolicy() {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       <TexturedBackground />
-
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex justify-between items-center">
-          <Logo />
-          <div className="hidden lg:flex space-x-8 items-center">
-            <Link href="/squeeze" className="text-gray-300 hover:text-green-400 transition-colors">
-              Back to Offer
-            </Link>
-            <Button
-              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-              onClick={() => setIsContactModalOpen(true)}
-            >
-              Contact Us
-            </Button>
-          </div>
-          <MobileMenu onContactClick={() => setIsContactModalOpen(true)} />
-        </nav>
-      </header>
 
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -70,7 +49,7 @@ export default function DMCAPolicy() {
               <br />
               New York, NY 10013
               <br />
-              Email: [dmca@ebots.com]
+              Email: [contact@whyfaithe.com]
             </p>
 
             <h2>4. Upon Receipt of a Compliant DMCA Notice</h2>
@@ -144,7 +123,6 @@ export default function DMCAPolicy() {
         </div>
       </footer>
 
-      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
   )
 }

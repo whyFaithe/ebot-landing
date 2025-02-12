@@ -9,30 +9,12 @@ import { MobileMenu } from "@/components/mobile-menu"
 import { ContactModal } from "@/components/contact-modal"
 
 export default function TermsOfService() {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
   return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
       <TexturedBackground />
 
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex justify-between items-center">
-          <Logo />
-          <div className="hidden lg:flex space-x-8 items-center">
-            <Link href="/squeeze" className="text-gray-300 hover:text-green-400 transition-colors">
-              Back to Offer
-            </Link>
-            <Button
-              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
-              onClick={() => setIsContactModalOpen(true)}
-            >
-              Contact Us
-            </Button>
-          </div>
-          <MobileMenu onContactClick={() => setIsContactModalOpen(true)} />
-        </nav>
-      </header>
+     
 
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -110,7 +92,7 @@ export default function TermsOfService() {
               <br />
               United States
               <br />
-              Email: [contact@ebots.com]
+              Email: [contact@whyfaithe.com]
             </p>
           </div>
         </div>
@@ -141,7 +123,6 @@ export default function TermsOfService() {
         </div>
       </footer>
 
-      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
   )
 }
