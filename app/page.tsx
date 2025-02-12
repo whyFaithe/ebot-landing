@@ -14,7 +14,7 @@ import { TexturedBackground } from '@/components/ui/textured-background'
 import { SectionDivider } from '@/components/ui/section-divider'
 import { HeroSection } from '@/components/hero-section'
 import { MobileMenu } from '@/components/mobile-menu'
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -36,14 +36,21 @@ export default function Home() {
         <nav className="flex justify-between items-center">
           <Logo />
           <div className="hidden lg:flex space-x-8 items-center">
-            <a href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</a>
-            <a href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">How It Works</a>
-            <a href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">Use Cases</a>
-            <Button
-              className="bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20"
+            <Link href="#features" className="text-gray-300 hover:text-green-400 transition-colors">
+              Features
+            </Link>
+            <Link href="#how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">
+              How It Works
+            </Link>
+            <Link href="#use-cases" className="text-gray-300 hover:text-green-400 transition-colors">
+              Use Cases
+            </Link>
+            <Link 
+              href="https://whyfaithe.jotform.com/250055040868959"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-green-500 text-white hover:bg-green-600 shadow-lg shadow-green-500/20 h-10 px-4 py-2"
             >
-              <Link href="https://whyfaithe.jotform.com/250055040868959">Contact Us</Link>
-            </Button>
+              Contact Us
+            </Link>
           </div>
           <MobileMenu />
         </nav>
@@ -55,19 +62,16 @@ export default function Home() {
         <HeroSection />
 
         {/* Platform Logos */}
-        <section className="relative mx-auto ">
-
+        <section className="relative mx-auto">
           {/* Overlay Gradient */}
-          <div className="absolute inset-0 bg-[[#101827] pointer-events-none" />
-
+          <div className="absolute inset-0 bg-[#101827] pointer-events-none" />
           <div className="container max-w-6xl mx-auto px-4 py-20 bg-[#101827]">
             <PlatformLogos />
           </div>
-          
         </section>
 
         {/* Features Section */}
-        <section id="features" className="relative mx-auto ">
+        <section id="features" className="relative mx-auto">
           {/* Background Image */}
           <div
             className="z-0 absolute opacity-30 inset-0 pointer-events-none"
@@ -78,8 +82,7 @@ export default function Home() {
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
-          >
-          </div>
+          />
           <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
             <h2 className="z-10 text-3xl font-bold text-center mb-4 text-white">Key Features</h2>
             <p className="z-10 text-gray-400 text-center mb-12 max-w-2xl mx-auto">
@@ -113,9 +116,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* How It Works Section */}
-        <section id="how-it-works" className=" container mx-auto px-4 py-20">
-          
-
+        <section id="how-it-works" className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">How It Works</h2>
             <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
@@ -128,7 +129,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Use Cases Section */}
-        <section id="use-cases" className="relative mx-auto ">
+        <section id="use-cases" className="relative mx-auto">
           {/* Background Image */}
           <div
             className="z-0 absolute opacity-30 inset-0 pointer-events-none"
@@ -139,8 +140,7 @@ export default function Home() {
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
-          >
-          </div>
+          />
           <div className="z-10 container max-w-6xl mx-auto px-4 py-20">
             <h2 className="z-10 text-3xl font-bold text-center mb-4 text-white">Use Cases for Small Businesses</h2>
             <p className="z-10 text-gray-400 text-center mb-12 max-w-2xl mx-auto">
@@ -153,8 +153,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Benefits Section */}
-        <section className=" container mx-auto px-4 py-20">
-          
+        <section className="container mx-auto px-4 py-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose E-Bots?</h2>
             <BenefitsGrid />
@@ -164,7 +163,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="relative  mx-auto ">
+        <section id="testimonials" className="relative mx-auto">
           {/* Background Image */}
           <div
             className="z-0 absolute opacity-30 inset-0 pointer-events-none"
@@ -175,8 +174,7 @@ export default function Home() {
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
-          >
-          </div>
+          />
           <div className="z-10 container px-4 py-20 max-w-6xl mx-auto">
             <h2 className="z-10 text-3xl font-bold text-center mb-12 text-white">What Our Customers Say</h2>
             <TestimonialSection />
@@ -187,7 +185,6 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="container mx-auto px-4 py-20">
-          
           <div className="max-w-2xl mx-auto">
             <ContactPricing />
           </div>
@@ -196,9 +193,7 @@ export default function Home() {
         <SectionDivider />
 
         {/* FAQ Section */}
-        <section id="faq" className="relative mx-auto ">
-          
-          
+        <section id="faq" className="relative mx-auto">
           {/* Background Image */}
           <div
             className="z-0 absolute opacity-30 inset-0 pointer-events-none"
@@ -209,8 +204,7 @@ export default function Home() {
               backgroundRepeat: 'no-repeat',
               transition: 'background-image 0.3s ease-out',
             }}
-          >
-          </div>
+          />
           <FaqSection />
         </section>
       </main>
@@ -219,9 +213,18 @@ export default function Home() {
       <footer className="container mx-auto px-4 py-8 text-center text-gray-400 border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center space-x-8">
-            <a href="/privacy" className="hover:text-green-400 transition-colors">Privacy Policy</a>
-            <a href="/terms" className="hover:text-green-400 transition-colors">Terms of Use</a>
-            <a href="https://whyfaithe.jotform.com/250055040868959" className="hover:text-green-400 transition-colors">Contact Us</a>
+            <Link href="/privacy" className="hover:text-green-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-green-400 transition-colors">
+              Terms of Use
+            </Link>
+            <a 
+              href="https://whyfaithe.jotform.com/250055040868959" 
+              className="hover:text-green-400 transition-colors"
+            >
+              Contact Us
+            </a>
           </div>
           <div className="mt-8">
             <p>&copy; 2024 E-Bots by WhyFaithe. All rights reserved.</p>
@@ -229,7 +232,7 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
 
